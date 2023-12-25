@@ -6,7 +6,7 @@ import { GeneralSettings } from "@/types";
 //   GenerateContentRequest,
 // } from "@google/generative-ai";
 import { 
-  GoogleGenerativeAI
+  GoogleGenerativeAI,
   HarmCategory,
   HarmBlockThreshold,
   GenerateContentRequest,
