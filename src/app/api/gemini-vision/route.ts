@@ -84,7 +84,8 @@ export async function POST(req: Request) {
     },
   ];
 
-  const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY as string);
+  //const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY as string);
+  const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY as string, 'https://palm-proxy-gemini.vercel.app');
 
   const model = genAI.getGenerativeModel({
     model: "gemini-pro-vision",
