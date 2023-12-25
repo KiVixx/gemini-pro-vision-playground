@@ -1,11 +1,16 @@
 // api/gemini-vision/route.ts
 import { GeneralSettings } from "@/types";
-import {
+// import {
+//   HarmCategory,
+//   HarmBlockThreshold,
+//   GenerateContentRequest,
+// } from "@google/generative-ai";
+import { 
+  GoogleGenerativeAI
   HarmCategory,
   HarmBlockThreshold,
   GenerateContentRequest,
-} from "@google/generative-ai";
-import { GoogleGenerativeAI } from '@fuyun/generative-ai'
+} from '@fuyun/generative-ai'
 
 const mapSafetyValueToThreshold = (value: number): HarmBlockThreshold => {
   switch (value) {
