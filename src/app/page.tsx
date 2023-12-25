@@ -14,7 +14,7 @@ export default function Home() {
         <ControlContainer />
       </div>
       <div className="md:col-span-9 h-[95vh]">
-        {selectedModel === "gemini-pro" ? (
+        {selectedModel === "gemini-pro-vision" ? (
           <ChatContainer />
         ) : (
           <VisionContainer />
